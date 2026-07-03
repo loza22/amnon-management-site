@@ -1,0 +1,1 @@
+console.log("Amnon Management website loaded successfully");
