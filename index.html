@@ -3,63 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amnon Management</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>Amnon Management | Federal Contracting</title>
+
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Amnon Management</h1>
-      <p>Reliable Solutions in Management, Operations & Strategic Support</p>
-      <div class="buttons">
-        <a href="#services" class="btn primary">Our Services</a>
-        <a href="#contact" class="btn secondary">Contact Us</a>
-      </div>
+<!-- HERO -->
+<header class="hero">
+  <div class="overlay"></div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/amnon-logo.svg" alt="Amnon Logo"/>
     </div>
-  </header>
 
-  <!-- SERVICES -->
-  <section id="services" class="section">
-    <h2>Our Capabilities</h2>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#capability">Capability</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="grid">
-      <div class="card">Business Management Support</div>
-      <div class="card">Operational Optimization</div>
-      <div class="card">Project Coordination</div>
-      <div class="card">Data & Reporting Support</div>
-      <div class="card">Administrative Solutions</div>
-      <div class="card">Strategic Planning Assistance</div>
+  <div class="hero-content">
+    <h1>Amnon Management</h1>
+    <p>Federal IT Services | Data Governance | Compliance Solutions</p>
+
+    <a href="#" id="downloadPDF" class="btn primary">
+      Export Capability Statement (PDF)
+    </a>
+  </div>
+</header>
+
+<!-- FEDERAL IDENTIFIERS + CAPABILITY -->
+<div class="pdf-area">
+
+  <section class="federal-block">
+    <div class="federal-card">
+      <h3>Company Identifiers</h3>
+
+      <div class="federal-grid">
+        <div>
+          <span class="label">UEI</span>
+          <span class="value">INSERT-UEI-HERE</span>
+        </div>
+
+        <div>
+          <span class="label">CAGE Code</span>
+          <span class="value">INSERT-CAGE-HERE</span>
+        </div>
+
+        <div>
+          <span class="label">NAICS Codes</span>
+          <span class="value">
+            541511 – Software Development<br/>
+            541512 – Systems Design<br/>
+            541519 – IT Consulting
+          </span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section alt">
-    <h2>About Amnon Management</h2>
+  <section id="capability" class="section dark">
+    <h2>Federal Readiness Statement</h2>
     <p>
-      Amnon Management provides structured, reliable, and efficient business support services.
-      We help organizations improve operations, streamline workflows, and execute strategic goals with clarity and consistency.
+      Amnon Management provides scalable IT, data governance, and compliance solutions
+      aligned with federal standards including cybersecurity frameworks and enterprise data management.
     </p>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
+</div>
 
-    <p>Email: <strong>info@amnonmanagement.com</strong></p>
-    <p>Phone: <strong>(Your Number Here)</strong></p>
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Core Capabilities</h2>
 
-    <button class="btn primary" onclick="alert('Thanks! We will get back to you soon.')">
-      Send Message
-    </button>
-  </section>
+  <div class="grid">
+    <div class="card">IT Infrastructure</div>
+    <div class="card">Data Governance</div>
+    <div class="card">Cloud Engineering</div>
+    <div class="card">Federal IT Consulting</div>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 Amnon Management. All rights reserved.</p>
-  </footer>
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
 
-  <script src="script.js"></script>
+  <form id="leadForm">
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email" required />
+    <textarea placeholder="Project Details"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Amnon Management</p>
+</footer>
+
+<!-- PDF LIBRARIES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
